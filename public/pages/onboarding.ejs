@@ -1,0 +1,31 @@
+<div class="form-container">
+		<form id="registerForm" class="col-xs-6" ng-submit="auth.register()">
+			<legend class="col-sm-12">Registration</legend>
+			<div class="row">
+				<fieldset class="col-sm-12 register-cred-container">
+					<label class="col-sm-12">Username</label>
+					<input class="col-sm-12 register-credetials" ng-model="auth.registerUser.username">
+				</fieldset>
+				<fieldset class="col-sm-12 register-cred-container">
+					<label class="col-sm-12">Password</label>
+					<input class="col-sm-12 register-credentials" ng-model="auth.registerUser.password" type="password">
+				</fieldset>
+			</div>
+			<button class="col-sm-12 register-submit" type="submit">Submit</button>
+		</form>
+
+		<form id="loginForm" class="col-xs-6" ng-submit="auth.login()">
+			<legend class="col-sm-12">Login</legend>
+			<div class="row">
+				<fieldset class="col-sm-12 register-cred-container">
+					<label class="col-sm-12">Username</label>
+					<input class="col-sm-12 register-credetials" ng-model="auth.loginUser.username">
+				</fieldset>
+				<fieldset class="col-sm-12 register-cred-container">
+					<label class="col-sm-12">Password</label>
+					<input class="col-sm-12 register-credentials" ng-model="auth.loginUser.password" type="password">
+				</fieldset>
+			</div>
+			<button class="col-sm-12 register-submit" type="submit">Submit</button>
+		</form>
+	</div>

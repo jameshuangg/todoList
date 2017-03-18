@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodoList</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- AngularJs -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		
+		<!-- Angular Dependency injections -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+		
+		<!-- Main angularApp -->
+		<script src="javascripts/angularApp.js"></script>
+		<script src="javascripts/angularAppConfig.js"></script>
+		
+		<!-- Services -->
+		<script src="javascripts/services/todos.js"></script>
+		<script src="javascripts/services/auth.js"></script>
+		
+		<!-- Controllers -->
+		<script src="javascripts/controllers/mainCtrl.js"></script>
+		<script src="javascripts/controllers/AuthCtrl.js"></script>
+		
+		
+  </head>
+  <body ng-app="myTodoList" class="mainBackground">
+		<ui-view></ui-view>
+  </body>
+</html>
